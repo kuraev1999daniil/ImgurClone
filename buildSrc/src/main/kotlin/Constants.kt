@@ -1,0 +1,1 @@
+const val APPLICATION_ID = "com.kuraev.imgurclone"
