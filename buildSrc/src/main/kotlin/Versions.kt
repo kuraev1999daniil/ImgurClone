@@ -1,9 +1,14 @@
 object Versions {
 
     object Sdk {
-        val minSdk = 21
+        val minSdk = 23
         val targetSdk = 33
         val compileSdk = 33
+    }
+
+    object Gradle {
+        const val kotlinGradlePlugin = "1.7.20"
+        const val buildToolsVersion = "7.3.0"
     }
 
     object App {

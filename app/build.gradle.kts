@@ -1,7 +1,7 @@
 plugins {
-    id(Plugins.ANDROID_APPLICATION_PLUGIN)
-    applyCommonPlugins()
-    id(Plugins.KOTLIN_KAPT)
+    androidApplicationPlugin
+    kotlinAndroidPlugin
+    kotlinKapt
 }
 
 android {
@@ -59,6 +59,8 @@ android {
 }
 
 dependencies {
+    implementation(project(Modules.Feature.auth))
+
     implementation(Libraries.Core.coreKtx)
     implementation(Libraries.Core.activityCompose)
     implementation(Libraries.Core.lifecycleRuntimeKtx)

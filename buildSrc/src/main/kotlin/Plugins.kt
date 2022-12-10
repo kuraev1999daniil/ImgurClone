@@ -1,13 +1,16 @@
-import Plugins.KOTLIN_ANDROID_PLUGIN
+import org.gradle.kotlin.dsl.version
 import org.gradle.plugin.use.PluginDependenciesSpec
+import org.gradle.plugin.use.PluginDependencySpec
 
-object Plugins {
+val PluginDependenciesSpec.androidApplicationPlugin: PluginDependencySpec
+    get() = this.id("com.android.application") version (Versions.Gradle.buildToolsVersion)
 
-    const val ANDROID_APPLICATION_PLUGIN = "com.android.application"
-    const val KOTLIN_ANDROID_PLUGIN = "org.jetbrains.kotlin.android"
-    const val KOTLIN_KAPT = "org.jetbrains.kotlin.kapt"
-}
+val PluginDependenciesSpec.androidLibraryPlugin: PluginDependencySpec
+    get() = this.id("com.android.library") version (Versions.Gradle.buildToolsVersion)
 
-fun PluginDependenciesSpec.applyCommonPlugins() {
-    id(KOTLIN_ANDROID_PLUGIN)
-}
+val PluginDependenciesSpec.kotlinAndroidPlugin: PluginDependencySpec
+    get() = this.id("org.jetbrains.kotlin.android") version (Versions.Gradle.kotlinGradlePlugin)
+
+val PluginDependenciesSpec.kotlinKapt: PluginDependencySpec
+    get() = this.id("org.jetbrains.kotlin.kapt") version (Versions.Gradle.kotlinGradlePlugin)
+
