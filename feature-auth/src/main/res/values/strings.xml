@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Onboarding Screen -->
+    <string name="onboarding_description">Imgur — это бесплатный сайт для размещения изображений, который служит популярным способом создания и обмена мемами, размещения GIF-файлов и других изображений. С несколькими сотнями миллионов пользователей никогда не бывает недостатка в контенте.</string>
+    <string name="onboarding_login">Войти</string>
+    <string name="onboarding_sign_in">Регистрация</string>
+</resources>

@@ -47,6 +47,10 @@ android {
         shaders = false
     }
 
+    buildFeatures {
+        compose = true
+    }
+
     composeOptions {
         kotlinCompilerExtensionVersion = Versions.Compose.compiler
     }
@@ -66,6 +70,7 @@ dependencies {
     implementation(Libraries.Core.lifecycleRuntimeKtx)
 
     implementation(Libraries.Compose.ui)
-    implementation(Libraries.Compose.uiPreview)
+    implementation(Libraries.Compose.tooling)
+    implementation(Libraries.Compose.toolingPreview)
     implementation(Libraries.Compose.material3)
 }

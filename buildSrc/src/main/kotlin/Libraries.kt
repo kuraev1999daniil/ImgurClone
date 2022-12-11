@@ -10,7 +10,10 @@ object Libraries {
 
     object Compose {
         const val ui = "androidx.compose.ui:ui:${Versions.Compose.ui}"
-        const val uiPreview = "androidx.compose.ui:ui-tooling-preview:${Versions.Compose.ui}"
+        const val tooling = "androidx.compose.ui:ui-tooling:${Versions.Compose.ui}"
+        const val toolingPreview = "androidx.compose.ui:ui-tooling-preview:${Versions.Compose.ui}"
         const val material3 = "androidx.compose.material3:material3:${Versions.Compose.material3}"
+        const val constraintLayout =
+            "androidx.constraintlayout:constraintlayout-compose:${Versions.Compose.constraintLayout}"
     }
 }
