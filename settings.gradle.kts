@@ -19,7 +19,7 @@ dependencyResolutionManagement {
 rootProject.name = "ImgurClone"
 
 include(":app")
-include(":core:core-ui")
+include(":core:ui")
 include(":core:injector")
 include(":auth:feature-api")
 include(":auth:feature-impl")
