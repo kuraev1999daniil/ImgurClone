@@ -39,4 +39,8 @@ object Versions {
         const val material3 = "1.0.1"
         const val constraintLayout = "1.0.1"
     }
+
+    object Dagger {
+        const val dagger = "2.44.2"
+    }
 }

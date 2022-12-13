@@ -1,4 +1,4 @@
-package com.kuraev.imgurclone.feature_auth.presentation.screens
+package com.kuraev.imgurclone.feature_auth.impl.presentation.screens
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.fillMaxSize
@@ -13,7 +13,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
-import com.kuraev.imgurclone.feature_auth.R
+import com.kuraev.imgurclone.feature_auth.impl.R
 
 @Preview
 @Composable

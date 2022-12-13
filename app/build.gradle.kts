@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = APPLICATION_ID
+    namespace = Namespaces.APPLICATION_ID
     compileSdk = Versions.Sdk.compileSdk
 
     defaultConfig {
-        applicationId = APPLICATION_ID
+        applicationId = Namespaces.APPLICATION_ID
         minSdk = Versions.Sdk.minSdk
         targetSdk = Versions.Sdk.targetSdk
         versionCode = Versions.App.versionCode
@@ -63,7 +63,7 @@ android {
 }
 
 dependencies {
-    implementation(project(Modules.Feature.auth))
+    implementation(project(Modules.Feature.authImpl))
 
     implementation(Libraries.Core.coreKtx)
     implementation(Libraries.Core.activityCompose)
@@ -73,4 +73,7 @@ dependencies {
     implementation(Libraries.Compose.tooling)
     implementation(Libraries.Compose.toolingPreview)
     implementation(Libraries.Compose.material3)
+
+    implementation(Libraries.Dagger.dagger)
+    kapt(Libraries.Dagger.compiler)
 }

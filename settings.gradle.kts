@@ -2,6 +2,7 @@
 
 pluginManagement {
     repositories {
+        maven { url = uri("https://plugins.gradle.org/m2/") }
         gradlePluginPortal()
         google()
         mavenCentral()
@@ -18,5 +19,6 @@ dependencyResolutionManagement {
 rootProject.name = "ImgurClone"
 
 include(":app")
-include(":feature-auth")
-
+include(":core-injector")
+include(":feature-auth-api")
+include(":feature-auth-impl")

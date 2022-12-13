@@ -5,12 +5,12 @@ plugins {
 }
 
 android {
-    namespace = "com.kuraev.imgurclone.feature_auth"
-    compileSdk = 33
+    namespace = Namespaces.FEATURE_AUTH_IMPL_ID
+    compileSdk = Versions.Sdk.compileSdk
 
     defaultConfig {
-        minSdk = 23
-        targetSdk = 33
+        minSdk = Versions.Sdk.minSdk
+        targetSdk = Versions.Sdk.targetSdk
 
         consumerProguardFiles("consumer-rules.pro")
     }
@@ -35,11 +35,13 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = Versions.Kotlin.jvmTarget
     }
 }
 
 dependencies {
+
+    implementation(project(Modules.Feature.authApi))
 
     implementation(Libraries.Core.coreKtx)
     implementation(Libraries.Core.activityCompose)
@@ -50,4 +52,7 @@ dependencies {
     implementation(Libraries.Compose.toolingPreview)
     implementation(Libraries.Compose.material3)
     implementation(Libraries.Compose.constraintLayout)
+
+    implementation(Libraries.Dagger.dagger)
+    kapt(Libraries.Dagger.compiler)
 }
