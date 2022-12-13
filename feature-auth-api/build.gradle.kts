@@ -34,5 +34,5 @@ android {
 
 dependencies {
 
-    implementation(project(Modules.Feature.coreInjector))
+    api(project(Modules.Feature.coreInjector))
 }

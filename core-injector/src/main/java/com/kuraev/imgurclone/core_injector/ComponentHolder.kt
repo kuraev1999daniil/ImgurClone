@@ -1,6 +1,6 @@
 package com.kuraev.imgurclone.core_injector
 
-interface ComponentHolder<C : BaseAPI, D : BaseDependencies> {
+interface ComponentHolder<C : BaseApi, D : BaseDependencies> {
 
     fun init(dependencies: D)
 
@@ -11,4 +11,4 @@ interface ComponentHolder<C : BaseAPI, D : BaseDependencies> {
 
 interface BaseDependencies
 
-interface BaseAPI
+interface BaseApi
