@@ -10,4 +10,5 @@ android {
 dependencies {
 
     api(project(Modules.Feature.coreInjector))
+    api(project(Modules.Feature.coreFeatureApi))
 }

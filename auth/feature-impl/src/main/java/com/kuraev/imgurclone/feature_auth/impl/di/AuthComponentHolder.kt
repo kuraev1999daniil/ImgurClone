@@ -1,9 +1,9 @@
 package com.kuraev.imgurclone.feature_auth.impl.di
 
 import com.kuraev.imgurclone.core_injector.ComponentHolder
-import com.kuraev.imgurclone.feature_auth.api.AuthFeatureApi
+import com.kuraev.imgurclone.feature_auth.api.AuthDiFeatureApi
 
-object AuthComponentHolder : ComponentHolder<AuthFeatureApi, AuthFeatureDependencies> {
+object AuthComponentHolder : ComponentHolder<AuthDiFeatureApi, AuthFeatureDependencies> {
 
     private var authComponentHolder: AuthComponent? = null
 
@@ -17,7 +17,7 @@ object AuthComponentHolder : ComponentHolder<AuthFeatureApi, AuthFeatureDependen
         }
     }
 
-    override fun get(): AuthFeatureApi {
+    override fun get(): AuthDiFeatureApi {
         checkNotNull(authComponentHolder)
 
         return authComponentHolder!!

@@ -63,6 +63,7 @@ android {
 }
 
 dependencies {
+    implementation(project(Modules.Feature.coreUi))
     implementation(project(Modules.Feature.authImpl))
 
     implementation(Libraries.Core.coreKtx)
@@ -73,6 +74,8 @@ dependencies {
     implementation(Libraries.Compose.tooling)
     implementation(Libraries.Compose.toolingPreview)
     implementation(Libraries.Compose.material3)
+
+    implementation(Libraries.Navigation.navigation)
 
     implementation(Libraries.Dagger.dagger)
     kapt(Libraries.Dagger.compiler)

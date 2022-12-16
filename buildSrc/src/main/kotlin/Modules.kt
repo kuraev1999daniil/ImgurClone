@@ -7,5 +7,6 @@ object Modules {
         const val authImpl = ":auth:feature-impl"
 
         const val coreUi = ":core:ui"
+        const val coreFeatureApi = ":core:feature-api"
     }
 }

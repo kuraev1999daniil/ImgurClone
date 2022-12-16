@@ -21,4 +21,9 @@ object Libraries {
         const val dagger = "com.google.dagger:dagger:${Versions.Dagger.dagger}"
         const val compiler = "com.google.dagger:dagger-compiler:${Versions.Dagger.dagger}"
     }
+
+    object Navigation {
+        const val navigation =
+            "androidx.navigation:navigation-compose:${Versions.Navigation.navigation}"
+    }
 }

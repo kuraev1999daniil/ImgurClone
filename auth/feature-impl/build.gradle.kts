@@ -22,6 +22,8 @@ dependencies {
     implementation(Libraries.Compose.material3)
     implementation(Libraries.Compose.constraintLayout)
 
+    implementation(Libraries.Navigation.navigation)
+
     implementation(Libraries.Dagger.dagger)
     kapt(Libraries.Dagger.compiler)
 }

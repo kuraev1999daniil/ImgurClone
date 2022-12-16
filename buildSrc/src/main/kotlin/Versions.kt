@@ -43,4 +43,8 @@ object Versions {
     object Dagger {
         const val dagger = "2.44.2"
     }
+
+    object Navigation {
+        const val navigation = "2.5.3"
+    }
 }

@@ -9,4 +9,6 @@ android {
 
 dependencies {
 
+    implementation(Libraries.Compose.ui)
+    implementation(Libraries.Compose.material3)
 }
