@@ -8,6 +8,8 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.core.view.WindowCompat
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.rememberNavController
 import com.kuraev.imgurclone.core_ui.theme.ImgurCloneTheme
 
 class MainActivity : ComponentActivity() {
@@ -28,7 +30,10 @@ class MainActivity : ComponentActivity() {
 private fun MainScreen() {
     ImgurCloneTheme {
         Box {
-            
+            val navController = rememberNavController()
+            NavHost(navController = navController, startDestination = "") {
+
+            }
         }
     }
 }
