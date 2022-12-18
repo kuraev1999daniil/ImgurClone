@@ -10,7 +10,9 @@ android {
 
 dependencies {
 
-    implementation(project(Modules.Feature.authApi))
+    api(project(Modules.Feature.authApi))
+
+    implementation(project(Modules.Feature.coreUi))
 
     implementation(Libraries.Core.coreKtx)
     implementation(Libraries.Core.activityCompose)

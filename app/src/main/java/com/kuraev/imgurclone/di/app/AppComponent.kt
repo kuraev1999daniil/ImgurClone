@@ -1,5 +1,7 @@
 package com.kuraev.imgurclone.di.app
 
+import android.content.Context
+import dagger.BindsInstance
 import dagger.Component
 import dagger.internal.Preconditions
 import javax.inject.Singleton
@@ -7,6 +9,14 @@ import javax.inject.Singleton
 @Component(modules = [AppModule::class])
 @Singleton
 interface AppComponent {
+
+    val context: Context
+
+    @Component.Factory
+    interface Factory {
+
+        fun create(@BindsInstance context: Context): AppComponent
+    }
 
     companion object {
 
@@ -20,7 +30,6 @@ interface AppComponent {
             )!!
 
         fun init(component: AppComponent) {
-            require(instance == null) { "AppComponent is already initialized." }
             instance = component
         }
     }

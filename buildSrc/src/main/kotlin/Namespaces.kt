@@ -7,4 +7,5 @@ object Namespaces {
 
     const val CORE_UI_ID = "com.kuraev.imgurclone.core_ui"
     const val CORE_FEATURE_API = "com.kuraev.imgurclone.feature_api"
+    const val CORE_INJECTOR = "com.kuraev.imgurclone.feature_injector"
 }

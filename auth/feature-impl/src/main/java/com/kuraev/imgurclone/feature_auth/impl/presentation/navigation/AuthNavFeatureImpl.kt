@@ -6,8 +6,9 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import com.kuraev.imgurclone.feature_auth.api.navigation.AuthNavFeatureApi
 import com.kuraev.imgurclone.feature_auth.impl.presentation.screens.OnboardingScreen
+import javax.inject.Inject
 
-class AuthNavFeatureImpl : AuthNavFeatureApi {
+class AuthNavFeatureImpl @Inject constructor() : AuthNavFeatureApi {
 
     private val onboardingRoute = "onboardingRoute"
 

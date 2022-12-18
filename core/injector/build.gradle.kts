@@ -1,9 +1,19 @@
 plugins {
-    `java-library`
-    kotlinJvm
+    androidLibraryPlugin
+    kotlinAndroidPlugin
+    kotlinKapt
 }
 
-java {
-    sourceCompatibility = JavaVersion.VERSION_1_7
-    targetCompatibility = JavaVersion.VERSION_1_7
+android {
+    applyBaseComposeLibraryConfig(Namespaces.CORE_INJECTOR)
+}
+
+dependencies {
+
+    implementation(Libraries.Compose.ui)
+
+    implementation(Libraries.Navigation.navigation)
+
+    implementation(Libraries.Dagger.dagger)
+    kapt(Libraries.Dagger.compiler)
 }

@@ -9,6 +9,6 @@ class App : Application() {
     override fun onCreate() {
         super.onCreate()
 
-        AppComponent.init(DaggerAppComponent.builder().build())
+        AppComponent.init(DaggerAppComponent.factory().create(applicationContext))
     }
 }

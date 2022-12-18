@@ -1,4 +1,6 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Theme.ImgurClone" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.ImgurClone" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
 </resources>

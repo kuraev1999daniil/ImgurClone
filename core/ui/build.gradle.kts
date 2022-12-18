@@ -10,5 +10,7 @@ android {
 dependencies {
 
     implementation(Libraries.Compose.ui)
+    implementation(Libraries.Compose.tooling)
+    implementation(Libraries.Compose.toolingPreview)
     implementation(Libraries.Compose.material3)
 }
